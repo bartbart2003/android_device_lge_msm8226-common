@@ -56,13 +56,13 @@ done
 # Pick up overlay for features that depend on non-open-source files
 DEVICE_PACKAGE_OVERLAYS := vendor/$VENDOR/$DEVICE/overlay
 
-PRODUCT_PACKAGES += \\
-    shutdownlistener
+#PRODUCT_PACKAGES += \\
+#    shutdownlistener
 
 PRODUCT_PACKAGES += \\
     libtime_genoff \\
     libTimeService \\
-    TimeService \\
+#    TimeService \\
     libscale \\
     libmdmdetect \\
     libperipheral_client \\
@@ -120,26 +120,26 @@ ifneq (\$(filter w7 jag3gds jagnm g2m w5 w55ds,\$(TARGET_DEVICE)),)
 
 LOCAL_PATH := \$(call my-dir)
 
-include \$(CLEAR_VARS)
-LOCAL_MODULE := qcrilmsgtunnel
-LOCAL_MODULE_OWNER := $VENDOR
-LOCAL_SRC_FILES := proprietary/priv-app/qcrilmsgtunnel/qcrilmsgtunnel.apk
-LOCAL_MODULE_TAGS := optional
-LOCAL_MODULE_SUFFIX := \$(COMMON_ANDROID_PACKAGE_SUFFIX)
-LOCAL_MODULE_CLASS := APPS
-LOCAL_CERTIFICATE := platform
-LOCAL_PRIVILEGED_MODULE := true
-include \$(BUILD_PREBUILT)
+#include \$(CLEAR_VARS)
+#LOCAL_MODULE := qcrilmsgtunnel
+#LOCAL_MODULE_OWNER := $VENDOR
+#LOCAL_SRC_FILES := proprietary/priv-app/qcrilmsgtunnel/qcrilmsgtunnel.apk
+#LOCAL_MODULE_TAGS := optional
+#LOCAL_MODULE_SUFFIX := \$(COMMON_ANDROID_PACKAGE_SUFFIX)
+#LOCAL_MODULE_CLASS := APPS
+#LOCAL_CERTIFICATE := platform
+#LOCAL_PRIVILEGED_MODULE := true
+#include \$(BUILD_PREBUILT)
 
-include \$(CLEAR_VARS)
-LOCAL_MODULE := shutdownlistener
-LOCAL_MODULE_OWNER := $VENDOR
-LOCAL_SRC_FILES := proprietary/app/shutdownlistener/shutdownlistener.apk
-LOCAL_MODULE_TAGS := optional
-LOCAL_MODULE_SUFFIX := \$(COMMON_ANDROID_PACKAGE_SUFFIX)
-LOCAL_MODULE_CLASS := APPS
-LOCAL_CERTIFICATE := platform
-include \$(BUILD_PREBUILT)
+#include \$(CLEAR_VARS)
+#LOCAL_MODULE := shutdownlistener
+#LOCAL_MODULE_OWNER := $VENDOR
+#LOCAL_SRC_FILES := proprietary/app/shutdownlistener/shutdownlistener.apk
+#LOCAL_MODULE_TAGS := optional
+#LOCAL_MODULE_SUFFIX := \$(COMMON_ANDROID_PACKAGE_SUFFIX)
+#LOCAL_MODULE_CLASS := APPS
+#LOCAL_CERTIFICATE := platform
+#include \$(BUILD_PREBUILT)
 
 include \$(CLEAR_VARS)
 LOCAL_MODULE := libtime_genoff
@@ -151,15 +151,15 @@ LOCAL_MODULE_SUFFIX := .so
 LOCAL_MODULE_CLASS := SHARED_LIBRARIES
 include \$(BUILD_PREBUILT)
 
-include \$(CLEAR_VARS)
-LOCAL_MODULE := TimeService
-LOCAL_MODULE_OWNER := $VENDOR
-LOCAL_SRC_FILES := proprietary/app/TimeService/TimeService.apk
-LOCAL_MODULE_TAGS := optional
-LOCAL_MODULE_SUFFIX := \$(COMMON_ANDROID_PACKAGE_SUFFIX)
-LOCAL_MODULE_CLASS := APPS
-LOCAL_CERTIFICATE := platform
-include \$(BUILD_PREBUILT)
+#include \$(CLEAR_VARS)
+#LOCAL_MODULE := TimeService
+#LOCAL_MODULE_OWNER := $VENDOR
+#LOCAL_SRC_FILES := proprietary/app/TimeService/TimeService.apk
+#LOCAL_MODULE_TAGS := optional
+#LOCAL_MODULE_SUFFIX := \$(COMMON_ANDROID_PACKAGE_SUFFIX)
+#LOCAL_MODULE_CLASS := APPS
+#LOCAL_CERTIFICATE := platform
+#include \$(BUILD_PREBUILT)
 
 include \$(CLEAR_VARS)
 LOCAL_MODULE := libTimeService

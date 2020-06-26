@@ -2,7 +2,6 @@
 bin/time_daemon
 -vendor/lib/libtime_genoff.so
 -vendor/lib/libTimeService.so
--app/TimeService/TimeService.apk
 
 # Audio
 vendor/lib/libacdbrtac.so
@@ -34,8 +33,6 @@ vendor/lib/libqmi_csvt_srvc.so
 vendor/lib/libcneapiclient.so
 
 # Radio
--priv-app/qcrilmsgtunnel/qcrilmsgtunnel.apk
--app/shutdownlistener/shutdownlistener.apk
 bin/netmgrd
 bin/qmuxd
 bin/radish
@@ -45,9 +42,6 @@ etc/permissions/qcnvitems.xml
 etc/permissions/qcrilhook.xml
 etc/data/dsi_config.xml
 etc/data/netmgr_config.xml
-framework/qcnvitems.jar
-framework/qcrilhook.jar
-framework/qti-telephony-common.jar
 -lib/libmdmdetect.so
 vendor/lib/libconfigdb.so
 vendor/lib/liblqe.so
@@ -82,7 +76,6 @@ vendor/lib/libscale.so
 # DRM
 bin/qseecomd
 etc/permissions/com.google.widevine.software.drm.xml
-framework/com.google.widevine.software.drm.jar
 vendor/lib/libQSEEComAPI.so
 lib/libdrmdecrypt.so
 vendor/lib/libdrmdiag.so
